@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang = "en">
+
+<body>
+  <h2>JavaScript appendChild() Method</h2>
+  <ul id="languages">
+    <li>Python</li>
+    <li>Java</li>
+    <li>Data Structure</li>
+  </ul>
+  <button onclick="append()">Append</button>
+
+  <hr>
+  <!-- //여러 개 추가용 -->
+  <h2>JavaScript appendChild() Method</h2>
+  <div id="menu"></div>
+  <button onclick="append2()">Submit</button>
+
+  <hr>
+  <!-- 노드 이동용 -->
+  <h2>JavaScript appendChild() Method</h2>
+  <ul id="first-list">
+    <li>Python</li>
+    <li>JavaScript</li>
+    <li>C++</li>
+  </ul>
+  <ul id="second-list">
+    <li>Ruby</li>
+    <li>Java</li>
+    <li>C#</li>
+  </ul>
+<!-- ///////////////////// -->
+  <script>
+    function append() {
+      const node = document.createElement("LI");
+      const textnode = document.createTextNode("C#");
+      node.appendChild(textnode);
+      document.getElementById("languages").appendChild(node);
+    }  
+
+    //////여러 개 추가 //////////
+    function append2() {
+      const lang = ["C#", "Java", "Python"];
+      const ul = document.createElement("ul");
+      for (i = 0; i < lang.length; i++) {
+        const li = document.createElement("li");
+        li.innerHTML = lang[i];
+        ul.appendChild(li);
+      }
+      document.getElementById("menu").appendChild(ul);
+    }
+
+    //////노드 이동 용////////
+    function createMenuItem(lang) {
+      const li = document.createElement('li');
+      li.textContent = lang;
+      return li;
+    }
+    const firstList = document.querySelector('#first-list');
+    const python = firstList.firstElementChild;
+    const secondList = document.querySelector('#second-list');
+    secondList.appendChild(python);
+  </script>
+</body>
+
+</html>

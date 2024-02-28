@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>prompt(), confirm(), alert()</title>
+</head>
+<body>
+    <h3>다이얼로그 사용법!</h3>
+    <hr>
+    <!-- 주의해야할 점: ==을 조심해라 -->
+    <script>
+        let ret = prompt("이름을 입력하세요", "디폴트 값");
+        if(ret == null){
+            //취소 버튼이나 다이얼로그를 닫은경우
+            document.write("<h2>취소를 누르셨습니다.</h2>");
+        }
+        else if(ret==""){
+            //문자열 입력 없이 확인 버튼을 누르는 경우
+            document.write("<h2>입력 없이 확인을 누르셨습니다.</h2>");
+        }
+        else{
+            //ret에는 사용자가 입력한 문자열
+            document.write("<h2>입력한 문자열은 다음과 같습니다.</h2>" + ret);
+        }
+
+        // ////////////////////////////////////////////////////////////////////
+        let ret2 = confirm("전송할까요?");
+        if(ret2 == true){
+            // 사용자가 "확인" 버튼을 누른경우
+            document.write("<h2>확인을 누르셨습니다.</h2>")
+        }
+        else{
+            //사용자가 "취소" 버튼이나 다이얼로그를 닫은 경우
+            document.write("<h2>취소를 누르셨습니다.</h2>")
+        }
+
+        ////////////////////////////////////////////////////////////////////////
+        alert("클릭하셨습니다.")
+    </script>
+    
+</body>
+</html>
