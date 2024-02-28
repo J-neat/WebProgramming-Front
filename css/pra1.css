@@ -1,0 +1,14 @@
+body{
+    background-color: linen;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+h3{
+    text-align: center;
+    color: darkred;
+}
+div{
+    color: blueviolet;
+    background-color: gold;
+    border-color: olivedrab;
+}
