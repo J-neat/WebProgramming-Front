@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>레이아웃</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+        }
+        #header{
+            width: 400px;
+            height: 50px;
+            border: 3px solid green;
+        }
+        #main{
+            width: 300px;
+            height: 300px;
+            border: 3px solid coral;
+            float: left;
+            
+        }
+        #side{
+            width: 100px;
+            height: 300px;
+            border: 3px solid orange;
+            float: left;
+        }
+        #footer{
+            width: 400px;
+            height: 50px;
+            border: 3px solid green;
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+    <div id="header">header</div>
+    <div id="main">main
+        <img src="../img/연습사진.jpg" width="150px" height="150px"
+        alt="고양이">
+    </div>
+    <div id="side">side</div>
+    <div id="footer">footer</div>
+    
+</body>
+</html>

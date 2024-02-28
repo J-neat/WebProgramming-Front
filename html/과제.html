@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>과제</title>
+    <style>
+        @keyframes moveani{
+            from, to{
+                top:0;
+                left:0;
+            }
+            25%{
+                top:0;
+                left: 300px;
+            }
+            50%{
+                top:300px;
+                left: 300px;
+            }
+            75%{
+                top: 300px;
+                left:0;
+            }
+        }
+        
+        #square{
+            animation-name: moveani;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+            background-color: blueviolet;
+            position: relative;
+            width: 100px;
+            height: 100px;
+        }
+    </style>
+
+</head>
+<body>
+    <div id="square"></div>
+</body>
+</html>

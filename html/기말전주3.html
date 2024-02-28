@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>마우스이벤트객체</title>
+    <style>
+        div{
+            width: 200px;
+            height: 200px;
+            border:1px solid green;
+        }
+        span{
+            border:1px solid pink;
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+
+    <p>안녕하세요 <span>이벤트</span> 연습중</p>
+
+    <script>
+        let sp=document.querySelector("span");
+        let n=1;
+
+        //마우스 있어야 확인 가능
+        sp.addEventListener('wheel', (e)=>{
+            if(e.wheelDelta>0){
+                e.currentTarget.style.borderwidth=`${n}px`
+                n++;
+            }
+            else{
+                e.currentTarget.style.borderwidth=`${n}px`
+                n--;
+            }
+        });
+    </script>
+
+    <!-- <script>
+        let div=document.querySelector("div");
+
+        //mousemove, click 등 넣어보기
+        div.addEventListener('mousemove', e=>{
+            console.log(e.clientX, e.clientY);
+        });
+    </script> -->
+    
+
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>체크박스</title>
+</head>
+<body>
+    <input type="checkbox" name="" id="hat" value="20000" checked>모자
+    <input type="checkbox" name="" id="shoes" value="45000">신발
+    <input type="checkbox" name="" id="bag" value="22000">가방    
+    <input type="text" name="" id="result">    
+
+    <script>
+        let chk=document.querySelectorAll('input[type=checkbox]');
+        let result=document.querySelector("#result");
+        let sum=0;
+
+        result.addEventListener('click', (e)=>{
+            for(let i=0;i<chk.length;i++){
+                if(chk[i].checked==true)
+                    sum+=Number(chk[i].value);
+            }
+            e.currentTarget.value = sum;
+            sum=0;
+        });
+
+    </script>
+    
+</body>
+</html>

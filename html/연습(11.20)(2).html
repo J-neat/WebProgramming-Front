@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>시간에따라(홀수, 짝수) 색이 변하도록 하기</title>
+</head>
+<body>
+    
+    <script>
+
+        let day = new Date();
+
+        let sec = day.getSeconds();
+
+        if(sec % 2 == 0) 
+            document.body.style.backgroundColor ="violet";
+        else 
+            document.body.style.backgroundColor ="lightskyblue";
+
+        //새로고침 눌러야 색 변하는 것 확인 가능하다.
+    </script>
+</body>
+</html>

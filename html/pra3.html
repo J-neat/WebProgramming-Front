@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    /*내부에 스타일*/
+    <style>
+        body{background-color: mistyrose;}
+    </style>
+    <style>
+        @import url(../css/pra1.css);
+        .warning{color: red}
+        body.main{background-color: aliceblue;}
+        #list{background: mistyrose;}
+        li>strong{color: green;}
+        div strong{color:dodgerblue;}
+        input[type=text]{color: red}
+        p>em:hover{background-color: yellow;}
+        h3::first-letter{color: red;}
+
+        p2{
+            border-left-width: 3px;
+            border-style: dotted;
+            border-color: blue;
+            cursor: pointer;
+        }
+
+        div{
+            background: skyblue url(../img/연습사진.jpg) center center/100px 100px repeat-y;
+            text-shadow: 3px 3px black;
+            box-shadow: 3px 3px 5px violet;
+        }
+    </style>
+    /*외부 스타일 시트파일 불러오기*/
+    <link href="../css/pra1.css" type="text/css" rel="stylesheet">
+
+</head>
+<body class="main">
+    <h3>Web Programming</h3>
+    <hr>
+    2학기 <strong>학습 내용</strong>
+    <ul id="list">
+        <li>HTML5</li>
+        <li><strong>CSS</strong></li>
+        <li>JAVASCRIPT</li>
+    </ul>
+    <div class="warning">60점 이하는 F!
+        <strong>맞지?</strong>
+    </div>
+    <br>
+    /*인라인 스타일*/
+    <p style="color: green">
+        안녕하세요
+        <em style="font-size: 25px;">자식입니다.</em>
+    </p>
+    <p style="color : magenta; font-size: 30px">
+        축구를 좋아합니다.
+    </p>
+    <input type="text" value="hello" start>
+    <input type="button" value="hello2">
+    <br>
+    <a href="http://www.naver.com" style="text-decoration: none; text-align: right;">
+    네이버</a>
+    <br>
+    <p2>박스 모델</p2>
+</body>
+</html>

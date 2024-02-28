@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" name="요소 이름" maxlength="10" size="10"
+    value="a">한 줄 짜리 입력창
+    <br>
+    <input type="password"> 암호 입력 창
+    <br>
+    <textarea cols="50" rows="20" name="요소이름" wrap="hard">여러 줄 입력 창</textarea>
+    //wrap: 자동 줄바꿈 처리 지정
+    <br>
+    나라: <input type="text" list="countries">
+    <datalist id="countries">
+        <option value="가나">
+        <option value="스위스">
+        <option value="브라질">
+    </datalist>
+    <br>
+    버튼 텍스트/이미지 버튼 만들기
+    <br>
+    <input type="button" value="사진 없는 버튼">
+    <br>
+    <input type="button" value="사진 있는 버튼안됨 타입이 img여야 해" src="../img/연습사진.jpg">
+    <br>
+    <button type="reset" name="버튼 이름" value="여기도 문자열">
+        버튼 문자열이나 이미지 넣어볼 것
+        <img src="../img/연습사진.jpg" width="30" height="30">
+    </button>
+    <br>
+    체크 박스 만들기
+    <br>
+    <input type="checkbox" name="체크박스 요소 이름" value="요소 값1" checked>
+    <br>name 속성 값이 같은 라디오 버튼들이 하나의 그룹을 형성
+    <br>
+    <input type="radio" name="radio1" value="요소 값1">
+    <input type="radio" name="radio1" value="요소 값2">
+    <input type="radio" name="radio1" value="요소 값3">
+    <br>
+    select로 드롭 다운 리스트에 목록 출력, 목록을 선택하는 입력 방식
+    <br>
+    <select name="선택하기" size="3" multiple>
+        <option value="1" selected>옵션1</option>
+        <option value="1">옵션2</option>
+        <option value="1">옵션3</option>
+    </select>
+    <br>
+    라벨로 폼 요소의 캡션 만들기
+    <br>
+    <label>
+        사용자 ID : <input type="text">
+    </label>
+    <br>
+    <label for="loginId">
+    사용자 ID : 
+    </label>
+    <input type="text" id="loginId">
+    <br>color 색 입력 폼
+    <input type="color" value="##FF00">
+    <br>시간 정보 입력 폼 요소
+    <input type="datetime-local">
+
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>키보드</title>
+</head>
+<body>
+    <input type="text" id="inp">
+    <input type="text" id="out">
+
+    <script>
+        let inp=document.querySelector('#inp');
+        let out=document.querySelector('#out');
+
+        // inp.addEventListener('keypress',(e)=>{
+        //     out.value=e.key+'  '+e.code;
+        // })
+
+        inp.addEventListener('keypress',(e)=>{
+            if(e.code=="Enter")
+                out.value=eval(inp.value);
+        })
+    </script>
+    
+</body>
+</html>

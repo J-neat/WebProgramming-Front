@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>방문 요일에 따라 배경색 만들기</title>
+</head>
+<body>
+    
+
+    <script>
+        let day = new Date();
+        let date = day.getDay();
+        let color=['red', 'orange', 'yellow', 'green', 'purple', 'blue', 'black']
+
+        document.body.style.backgroundColor = color[date];
+    </script>
+</body>
+</html>

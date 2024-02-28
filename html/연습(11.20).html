@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let day = new Date();
+
+        let year = day.getFullYear();//년
+        let month = day.getMonth();//월
+        let date = day.getDate();//일
+        let week = day.getDay();//요일
+        let arr=['일', '월', '화', '수', '목', '금', '토']
+
+        month+=1;
+
+        if(month<10) month = '0' + month;
+        if(date<10) date = '0' + date;
+
+        document.write(`<h2>`);
+        document.write(`${year}년 ${month} 월 ${date}일 ${arr[week]}요일`);
+        document.write(`</h2>`)
+
+    </script>
+</body>
+</html>

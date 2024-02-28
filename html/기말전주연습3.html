@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>과제2</title>
+    <style>
+        div{
+            width: 200px;
+            height: 200px;
+            border: 1px solid green;
+        }
+    </style>
+</head>
+<body>
+    <input type="radio" id="banana" name="fruit" value="../img/바나나.jpg">바나나
+    <input type="radio" id="mango" name="fruit" value="../img/망고.jpg">망고
+
+    <div>
+
+    </div>
+    
+    <script>
+        let fruits=document.getElementsByName("fruit");
+        let div=document.querySelector("div");
+
+        for(let i=0; i<fruits.length; i++){
+            fruits[i].addEventListener('click', function(){
+                div.style.backgroundImage='url(' + this.value + ')';
+            });
+        }
+    </script>
+</body>
+</html>

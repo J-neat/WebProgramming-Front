@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <!-- <script>
+
+        let d = new Date();
+        let test = new Date(2023, 11, 11);//12월 12일을 의미한다
+
+        console.log(test.getTime());
+        console.log(d.getTime());
+
+        console.log(Math.floor(((test.getTime()-d.getTime()))/1000/60/60/24)+'일');
+        //1000 60 60 24
+
+    </script> -->
+
+    <script>
+        let d = new Date();
+
+        d.setDate(100+d.getDate())//d.setDate(45)현재 월의 1일 기준 10.1 --> 10.31 --> 11.14
+        console.log(d);
+    </script>
+</body>
+</html>
